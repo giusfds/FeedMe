@@ -1,0 +1,147 @@
+body {
+    background-color: var(--cor-de-fundo);
+}
+
+
+@keyframes color {
+    0% {
+        background: var(--a1);
+    }
+
+    20% {
+        background: var(--a2);
+    }
+
+    40% {
+        background: var(--a3);
+    }
+
+    60% {
+        background: var(--a3);
+    }
+
+    80% {
+        background: var(--a2);
+    }
+
+    100% {
+        background: var(--a1);
+    }
+}
+
+.navbar {
+    border: 1px solid var(--cor-borda) !important;
+    background-color: var(--cor-caixa) !important;
+    border-radius: 15px;
+}
+
+.index_container {
+    border: 1px solid var(--cor-borda);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: var(--cor-caixa) !important;
+}
+
+.subcontainer {
+    animation: color 5s infinite linear;
+}
+
+th,
+label,
+td,
+tr {
+    color: var(--cor-borda) !important;
+}
+
+.nav-link {
+    color: var(--cor-borda);
+}
+
+.nav-link:hover {
+    color: var(--cor-borda);
+}
+
+p,
+h1,H3,div {
+    color: var(--cor-borda) !important;
+}
+
+.col_item {
+    border: 1px solid var(--cor-borda);
+    background-color: var(--cor-caixa);
+    border-radius: 10px;
+}
+
+.translate-button {
+    border: 1px solid var(--cor-borda);
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.defin_container {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.fl_img {
+    width: 10px;
+}
+
+.translate-button:hover {
+    background-color: rgba(255, 255, 255, 0.322);
+}
+
+.dish-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dish-item {
+    width: 50%;
+    margin-bottom: 20px;
+    background-color: #fffff0;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dish-item .dish-details {
+    width: 50%;
+}
+
+.dish-item h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #B22222;
+}
+
+.dish-item img {
+    width: 250px; 
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.dish-item p {
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.dish-item .rating {
+    background-color: #B22222;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
